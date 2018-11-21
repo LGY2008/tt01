@@ -1,0 +1,74 @@
+<ns0:test-suite xmlns:ns0="urn:model.allure.qatools.yandex.ru" start="1542808531526" stop="1542808531643">
+  <name>test01</name>
+  <labels/>
+  <test-cases>
+    <test-case start="1542808531526" status="passed" stop="1542808531530">
+      <name>Test01.test001</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="blocker"/>
+        <label name="thread" value="2192-MainThread"/>
+        <label name="host" value="MS-20180906QJYH"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps>
+        <step start="1542808531530" status="passed" stop="1542808531530">
+          <name>开始执行测试001方法</name>
+          <title>开始执行测试001方法</title>
+          <attachments>
+            <attachment source="02ce86e4-2e19-4929-a708-30d74f47e490-attachment.txt" title="描述：" type="text/plain"/>
+          </attachments>
+          <steps/>
+        </step>
+      </steps>
+    </test-case>
+    <test-case start="1542808531535" status="failed" stop="1542808531638">
+      <name>Test01.test02</name>
+      <failure>
+        <message>AssertionError: assert 0</message>
+        <stack-trace>self = &lt;test01.Test01 object at 0x033930D0&gt;
+
+    @pytest.allure.severity(pytest.allure.severity_level.CRITICAL)
+    @allure.step("开始执行测试002方法")
+    def test02(self):
+        allure.attach("描述：","正在退出操作...")
+        print("退出成功！")
+&gt;       assert 0
+E       assert 0
+
+Scripts\test01.py:15: AssertionError</stack-trace>
+      </failure>
+      <attachments/>
+      <labels>
+        <label name="severity" value="critical"/>
+        <label name="thread" value="2192-MainThread"/>
+        <label name="host" value="MS-20180906QJYH"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps>
+        <step start="1542808531536" status="failed" stop="1542808531539">
+          <name>开始执行测试002方法</name>
+          <title>开始执行测试002方法</title>
+          <attachments>
+            <attachment source="c8a27288-ab38-47a6-9338-9c3ee41cd8b3-attachment.txt" title="描述：" type="text/plain"/>
+          </attachments>
+          <steps/>
+        </step>
+      </steps>
+    </test-case>
+    <test-case start="1542808531641" status="passed" stop="1542808531643">
+      <name>Test01.test03</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="minor"/>
+        <label name="thread" value="2192-MainThread"/>
+        <label name="host" value="MS-20180906QJYH"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+  </test-cases>
+</ns0:test-suite>
